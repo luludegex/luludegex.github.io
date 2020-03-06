@@ -27,30 +27,63 @@ h1{font-family: 'Dancing Script', cursive;
 
 
 .transfo{
-  transform: rotate(270deg) ;
+  transform: rotate(270deg) ; box-shadow:3px 3px 15px rgba(16, 69, 87, 0.548);
 }
 
 
-img:hover.transfo{ rotate:270deg ;
 
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
 }
-
-
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
 li{list-style-type: circle;
 }
 
 img{border-radius: 50px;
   max-width: 25%;
+  box-shadow:2px 2px 15px rgba(16, 69, 87, 0.548);
   
  
 
 }
+.com{ font-size:x-small ;
 
+
+}
 h2{
   font-style: inherit;
   display: inline-table;
 }
 
+h3{font-family: 'Amatic SC', cursive;
+  font-weight: normal;
+  text-decoration:rgb(236, 161, 161) wavy underline;
+  font-size: x-large;
+  
+
+
+}
+
+h4{
+
+  font-size: large;
+}
 
 .imagesTitre{
   background-color:lightblue;
@@ -67,7 +100,7 @@ h2{
 }
 .card{
   background-color: white;
-  box-shadow: rgb(136, 248, 248);
+  box-shadow:3px 3px 15px rgba(16, 69, 87, 0.548);
   background-size: boxe-size ;
   border-radius: 30px;
   margin: 1em;
